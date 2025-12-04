@@ -1,0 +1,25 @@
+@use "../global" as *;
+
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(15);
+  border: 1px solid #0370bb;
+  border-radius: 9999px;
+  padding-left: rem(25);
+  padding-top: rem(7);
+  padding-bottom: rem(7);
+  padding-right: rem(7);
+  transition: 0.3s ease-in-out;
+}
+
+.c-btn__text {
+  font-size: rem(15);
+  font-weight: 600;
+  color: #000;
+}
+
+.c-btn__svg {
+  width: rem(30);
+  height: rem(30);
+}
