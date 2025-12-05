@@ -28,15 +28,17 @@ const slider2 = new Swiper(".slider2", {
     el: ".swiper-scrollbar",
   },
 });
-const slider3 = new Swiper(".slider3", {
-  slidesPerView: 1.2,
+const slider3 = new Swiper(".slider-banners", {
+  slidesPerView: 2,
   centeredSlides: true,
   loop: true,
   initialSlide: 0,
+  spaceBetween: 20,
   breakpoints: {
     768: {
       effect: "slide",
-      slidesPerView: 3,
+      spaceBetween: 36,
+      slidesPerView: 5,
       centeredSlides: false,
       autoplay: {
         delay: 3000,
@@ -55,22 +57,25 @@ const slider3 = new Swiper(".slider3", {
 });
 
 // ピックアップタブスライダー
-const sliderPickup = new Swiper(".slider-pickup", {
-  slidesPerView: 1.1,
+const sliderPickup = new Swiper(".slider-mv", {
+  slidesPerView: 1,
   centeredSlides: true,
+  effect: "fade",
   loop: true,
   initialSlide: 0,
+  speed: 2000,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     768: {
-      effect: "slide",
-      slidesPerView: 3,
+      effect: "fade",
+      slidesPerView: 1,
       centeredSlides: false,
     },
   },
-  navigation: {
-    nextEl: '[data-content="all"] .swiper-button-next',
-    prevEl: '[data-content="all"] .swiper-button-prev',
-  },
+  
 });
 
 const sliderStay = new Swiper(".slider-stay", {

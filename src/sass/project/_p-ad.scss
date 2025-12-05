@@ -1,0 +1,55 @@
+@use "../global" as *;
+
+.p-ad {
+  padding-top: rem(142);
+  padding-bottom: rem(120);
+}
+
+.p-ad__content {
+}
+
+.p-ad__lists {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: rem(38);
+}
+
+.p-ad__list {
+}
+
+.p-ad__link {
+  display: block;
+}
+
+.p-ad__img {
+}
+.p-ad__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-ad__btn-wrapper {
+  margin-top: rem(24);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.p-ad__btn {
+  display: flex;
+  gap: rem(10);
+  align-items: center;
+}
+
+.p-ad__btn-text {
+  color: #000;
+  font-size: rem(16);
+  font-weight: 600;
+  line-height: calc(36 / 16);
+}
+
+.p-ad__svg {
+  width: rem(30);
+  height: rem(30);
+}

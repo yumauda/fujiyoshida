@@ -1,5 +1,49 @@
 <?php get_header(); ?>
 <main>
+  <section class="p-mv">
+    <div class="l-inner">
+      <div class="p-mv__content">
+        <!-- Slider main container -->
+        <div class="swiper slider-mv">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <figure class="p-mv__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/mv.webp" alt="" width="1820" height="994">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-mv__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/recommend_1.webp" alt="" width="1820" height="994">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-mv__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/recommend_2.webp" alt="" width="1820" height="994">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-mv__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/top/recommend_3.webp" alt="" width="1820" height="994">
+              </figure>
+            </div>
+            
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
   <div class="p-top-links">
     <div class="p-top-links__inner">
       <ul class="p-top-links__lists">
@@ -182,8 +226,8 @@
                     </div>
                   </a>
                 </div>
-                
-              
+
+
               </div>
               <!-- If we need pagination -->
               <!--     <div class="swiper-pagination"></div> -->
@@ -198,7 +242,87 @@
   <section class="p-top-information">
     <div class="l-inner">
       <div class="p-top-information__content">
-        
+        <div class="p-top-information__left">
+          <div class="p-top-information__title">
+            <div class="c-section-title">
+              <h2 class="c-section-title__ja">お知らせ</h2>
+              <p class="c-section-title__en">Information</p>
+            </div>
+          </div>
+          <div class="p-top-information__btn">
+            <a href="#" class="c-btn">
+              <p class="c-btn__text">お知らせ一覧</p>
+              <div class="c-btn__svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
+                  <defs>
+                    <linearGradient id="linear-gradient" x1="0.193" x2="1" y2="1" gradientUnits="objectBoundingBox">
+                      <stop offset="0" stop-color="#26d0ce" />
+                      <stop offset="1" stop-color="#2c77bc" />
+                    </linearGradient>
+                  </defs>
+                  <g id="グループ_840" data-name="グループ 840" transform="translate(-1830 -991.427)">
+                    <g id="グループ_841" data-name="グループ 841" transform="translate(22 1)">
+                      <circle id="楕円形_22" data-name="楕円形 22" cx="15" cy="15" r="15" transform="translate(1808 990.427)" fill="url(#linear-gradient)" />
+                      <g id="グループ_755" data-name="グループ 755" transform="translate(1817 1002.427)">
+                        <path id="パス_29687" data-name="パス 29687" d="M-11860.351-13710.452h11.07" transform="translate(11860.351 13713.999)" fill="none" stroke="#fff" stroke-width="1" />
+                        <path id="パス_29688" data-name="パス 29688" d="M-11847.689-13715.562l3.082,3.5-3.082,3.5" transform="translate(11856.203 13715.563)" fill="none" stroke="#fff" stroke-width="1" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="p-top-information__right">
+          <ul class="p-top-information__lists">
+            <li class="p-top-information__list">
+              <a href="#" class="p-top-information__link">
+                <div class="p-top-information__meta">
+                  <time class="p-top-information__time">2025.12.05</time>
+                  <p class="p-top-information__category">観光協会より</p>
+                </div>
+                <p class="p-top-information__news-title">お知らせのタイトルが入ります。</p>
+              </a>
+            </li>
+            <li class="p-top-information__list">
+              <a href="#" class="p-top-information__link">
+                <div class="p-top-information__meta">
+                  <time class="p-top-information__time">2025.12.05</time>
+                  <p class="p-top-information__category">イベント</p>
+                </div>
+                <p class="p-top-information__news-title">お知らせのタイトルが入ります。</p>
+              </a>
+            </li>
+            <li class="p-top-information__list">
+              <a href="#" class="p-top-information__link">
+                <div class="p-top-information__meta">
+                  <time class="p-top-information__time">2025.12.05</time>
+                  <p class="p-top-information__category">お知らせ</p>
+                </div>
+                <p class="p-top-information__news-title">お知らせのタイトルが入ります。</p>
+              </a>
+            </li>
+            <li class="p-top-information__list">
+              <a href="#" class="p-top-information__link">
+                <div class="p-top-information__meta">
+                  <time class="p-top-information__time">2025.12.05</time>
+                  <p class="p-top-information__category">観光協会より</p>
+                </div>
+                <p class="p-top-information__news-title">お知らせのタイトルが入ります。</p>
+              </a>
+            </li>
+            <li class="p-top-information__list">
+              <a href="#" class="p-top-information__link">
+                <div class="p-top-information__meta">
+                  <time class="p-top-information__time">2025.12.05</time>
+                  <p class="p-top-information__category">イベント</p>
+                </div>
+                <p class="p-top-information__news-title">お知らせのタイトルが入ります。</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -353,5 +477,109 @@
       </div>
     </div>
   </section>
+  <div class="p-ad">
+    <div class="l-inner">
+      <div class="p-ad__content">
+        <ul class="p-ad__lists">
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+          <li class="p-ad__list">
+            <a href="#" class="p-ad__link">
+              <figure class="p-ad__img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/ad.png" alt="" width="345" height="280">
+              </figure>
+            </a>
+          </li>
+        </ul>
+        <div class="p-ad__btn-wrapper">
+          <a href="#" class="p-ad__btn">
+            <p class="p-ad__btn-text">広告バナーの掲載についてはこちら</p>
+            <div class="p-ad__svg">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30 30">
+                <defs>
+                  <linearGradient id="linear-gradient" x1="0.193" x2="1" y2="1" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#26d0ce" />
+                    <stop offset="1" stop-color="#2c77bc" />
+                  </linearGradient>
+                </defs>
+                <g id="グループ_840" data-name="グループ 840" transform="translate(-1830 -991.427)">
+                  <g id="グループ_841" data-name="グループ 841" transform="translate(22 1)">
+                    <circle id="楕円形_22" data-name="楕円形 22" cx="15" cy="15" r="15" transform="translate(1808 990.427)" fill="url(#linear-gradient)" />
+                    <g id="グループ_755" data-name="グループ 755" transform="translate(1817 1002.427)">
+                      <path id="パス_29687" data-name="パス 29687" d="M-11860.351-13710.452h11.07" transform="translate(11860.351 13713.999)" fill="none" stroke="#fff" stroke-width="1" />
+                      <path id="パス_29688" data-name="パス 29688" d="M-11847.689-13715.562l3.082,3.5-3.082,3.5" transform="translate(11856.203 13715.563)" fill="none" stroke="#fff" stroke-width="1" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
+<?php get_template_part('includes/banners'); ?>
 <?php get_footer() ?>

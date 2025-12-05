@@ -2,10 +2,107 @@
 
 .p-top-information {
   padding-top: rem(92);
+  padding-bottom: rem(175);
+  position: relative;
 }
-
-.l-inner {
+.p-top-information::before {
+  position: absolute;
+  content: "";
+  background: url(../images/top/top_news_bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 986;
+  object-fit: cover;
+  top: rem(-140);
+  left: 0;
+}
+.p-top-information::after {
+  position: absolute;
+  content: "";
+  background: url(../images/top/top_news_bottom.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 233;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  bottom: rem(-32);
+  left: 0;
 }
 
 .p-top-information__content {
+  display: flex;
+  gap: rem(157);
+}
+
+.p-top-information__left {
+}
+
+.p-top-information__title {
+}
+
+.p-top-information__btn {
+  margin-top: rem(52);
+}
+
+.p-top-information__right {
+  flex: 1;
+}
+
+.p-top-information__lists {
+}
+
+.p-top-information__list {
+}
+
+.p-top-information__link {
+  display: flex;
+  gap: rem(24);
+  padding-top: rem(28);
+  padding-bottom: rem(28);
+  border-bottom: 1px solid #c9c9c9;
+}
+.p-top-information__list:first-child .p-top-information__link {
+  padding-top: initial;
+}
+
+.p-top-information__meta {
+  display: flex;
+  align-items: center;
+  gap: rem(24);
+}
+
+.p-top-information__time {
+  font-family: $roboto;
+  font-size: rem(20);
+  font-weight: 700;
+  line-height: calc(50 / 20);
+  color: #000;
+}
+
+.p-top-information__category {
+  width: rem(135);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(35);
+  border-radius: 9999px;
+  border: 2px solid rgba($color: #00499d, $alpha: 0.2);
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: calc(50 / 16);
+  color: #00499d;
+  font-weight: 500;
+}
+
+.p-top-information__news-title {
+  color: #000;
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: calc(50 / 18);
+  text-decoration: underline;
 }
